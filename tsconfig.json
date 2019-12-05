@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        /* basic */
+        "outDir": "lib",
+        "target": "esnext",
+        "module": "esnext",
+        "jsx": "react",
+        "declaration": true,
+        "declarationDir": "./types",
+        "removeComments": true,
+        "sourceMap": true,
+
+        /* module resolution */
+        "baseUrl": ".",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+
+        /* type check */
+        "strict": true,
+        "skipLibCheck": true,
+
+        /* error report */
+        "diagnostics": true,
+        "locale": "zh-CN"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

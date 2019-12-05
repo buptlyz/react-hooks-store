@@ -1,6 +1,6 @@
 {
   "name": "simple-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "state management tool",
   "keywords": [
     "react",

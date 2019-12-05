@@ -8,13 +8,16 @@
   ],
   "license": "ISC",
   "author": "liyizhe",
-  "homepage": "TODO",
-  "repository": "TODO",
-  "bugs": "TODO",
+  "homepage": "https://github.com/buptlyz/react-hooks-store",
+  "repository": "https://github.com/buptlyz/react-hooks-store",
+  "bugs": "https://github.com/buptlyz/react-hooks-store/issues",
   "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "lib/index.js",
   "types": "types/index.d.ts",
-  "files": [],
+  "files": [
+    "lib",
+    "types"
+  ],
   "scripts": {
     "build": "tsc"
   },

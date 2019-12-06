@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect } from 'react';
 import Context from "./context";
 import { Store } from './types';
-import { BehaviorSubject } from 'rxjs';
+import BehaviorSubject from './utils/BehaviorSubject';
 
 type Props = {
     store: Store<any>;
@@ -11,7 +11,6 @@ type Props = {
 const Provider: React.FC<Props> = ({ store, children }) => {
     const contextValue = useMemo(() => {
         // 订阅store，并将subject和unsubscribe返回
-        // TODO implement an BehaviorSubject and remove rxjs
         const subject = new BehaviorSubject(store.getState());
         const unsubscribe = store.subscribe(() => {
             subject.next(store.getState());

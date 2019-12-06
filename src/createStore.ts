@@ -77,6 +77,7 @@ export default function createStore<State>(preloadedState: State, reducer: Reduc
 
         const listeners = (currentListeners = nextListeners)
         for (const listener of listeners) {
+            // https://github.com/reduxjs/redux/issues/303
             listener();
         }
         return payload;

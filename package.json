@@ -22,12 +22,10 @@
     "build": "tsc"
   },
   "peerDependencies": {
-    "react": "^16.8.3",
-    "rxjs": "^6.5.3"
+    "react": "^16.8.3"
   },
   "devDependencies": {
     "@types/react": "^16.9.15",
-    "react": "^16.12.0",
-    "rxjs": "^6.5.3"
+    "react": "^16.12.0"
   }
 }

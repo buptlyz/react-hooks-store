@@ -2,7 +2,6 @@ import Context from './context';
 import { useEffect, useRef, useContext, useReducer } from 'react';
 import shallowequal from './utils/shallowequal';
 
-// TODO 实现shallowequal
 export default function useSelector<State>(selector: (state: State) => any, equalityFn: (a: any, b: any) => boolean = shallowequal) {
     const { store, subject } = useContext(Context);
     const [, forceUpdate] = useReducer(s => s + 1, 0);

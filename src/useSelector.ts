@@ -48,13 +48,13 @@ export default function useSelector<State>(selector: (state: State) => any, equa
                 latestUpdateError.current = err;
             }
 
-            forceUpdate(null);
+            forceUpdate();
         }
 
         const unsubscribe = subject.subscribe(checkForUpdates);
 
         return () => {
-            unsubscribe();
+            unsubscribe && unsubscribe();
         }
     }, [store, subject]);
 
